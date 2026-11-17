@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="Workout Gym’in İstanbul’daki üç şubesini keşfet ve üyelik başvurunu yap.">
+  <title>Workout Gym | İstanbul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&family=Geist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=3">
+  <script src="/translations.js?v=3" defer></script>
+  <script src="/site.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" data-route dir="ltr"><span>WORKOUT</span><strong>GYM</strong></a>
+      <nav data-aria="mainNav" aria-label="Ana menü">
+        <a href="/" data-route data-nav="home" data-i18n="navHome">Ana sayfa</a>
+        <a href="/uyelik" data-route data-nav="membership" data-i18n="navMembership">Üyelik</a>
+        <a href="/salon" data-route data-nav="club" data-i18n="navClub">Salon ve şubeler</a>
+      </nav>
+      <div class="language">
+        <span class="language-icon" aria-hidden="true">◎</span>
+        <select id="language" data-aria="language" aria-label="Dil seç">
+          <option value="tr" lang="tr">TR</option>
+          <option value="en" lang="en">EN</option>
+          <option value="ar" lang="ar">العربية</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" data-pages="home" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-band"><span data-i18n="heroPlace">İstanbul</span><span data-i18n="heroBranches">3 şube</span></div>
+        <h1 id="hero-title" dir="ltr">WORKOUT <span>GYM</span></h1>
+        <img class="hero-figure" src="/assets/altin-heykel.webp" alt="" width="842" height="1400" fetchpriority="high">
+        <div class="hero-caption">
+          <h2 data-i18n="heroTitle">Kendi gücünü keşfet.</h2>
+          <p data-i18n="heroText">İlk tekrarından yeni rekoruna. İstanbul’da sana en yakın Workout Gym’i bul.</p>
+          <div class="actions">
+            <a class="button button-lime" href="#uyelik" data-i18n="heroPlans">Üyelikleri incele</a>
+            <a class="button button-glass" href="#salon" data-play-tour data-i18n="tourPlay">Salon turunu izle</a>
+          </div>
+        </div>
+      </div>
+      <nav class="club-bar wrap" aria-label="Şubeler" data-aria="branchesNav">
+        <a href="#caglayan">Çağlayan <span aria-hidden="true">↘</span></a>
+        <a href="#circir">Çırçır <span aria-hidden="true">↘</span></a>
+        <a href="#ornektepe">Örnektepe <span aria-hidden="true">↘</span></a>
+      </nav>
+    </section>
+
+    <section class="page-intro wrap" data-pages="membership" hidden>
+      <p class="kicker">Workout Gym</p>
+      <h1 data-i18n="membershipPage">Üyelik ve başvuru</h1>
+      <p data-i18n="membershipIntro">Çırçır kampanyalarını incele veya istediğin şube için genel üyelik başvurusu yap.</p>
+    </section>
+    <section class="page-intro wrap" data-pages="club" hidden>
+      <p class="kicker">Workout Gym · İstanbul</p>
+      <h1 data-i18n="clubPage">Salon ve şubeler</h1>
+      <p data-i18n="clubIntro">Çırçır’ı videoda gez, salon olanaklarına göz at ve sana en yakın şubeyi bul.</p>
+    </section>
+
+    <section class="memberships" id="uyelik" data-pages="home membership" aria-labelledby="membership-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-i18n="circirBranch">Çırçır şubesi</p>
+            <h2 id="membership-title" data-i18n="offers">Üyelik fırsatları.</h2>
+          </div>
+          <p data-i18n="offersText">Üyelik süreni seç ve hediye aylarla antrenmana devam et.</p>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <p class="plan-duration" data-i18n="sixTotal">Toplam 6 ay üyelik</p>
+            <h3><span dir="ltr">3<i>+</i>3</span><small data-i18n="monthsGift">ay hediye</small></h3>
+            <div class="plan-bottom">
+              <p><strong dir="ltr">9.990 ₺</strong><span data-i18n="campaignPrice">Kampanya fiyatı</span></p>
+              <a class="button button-dark" href="#basvuru" data-plan="3+3" data-i18n="chooseThree">3+3 ayı seç</a>
+            </div>
+          </article>
+          <article class="plan plan-accent">
+            <p class="plan-duration" data-i18n="yearTotal">Toplam 12 ay üyelik</p>
+            <h3><span dir="ltr">6<i>+</i>6</span><small data-i18n="monthsGift">ay hediye</small></h3>
+            <div class="plan-bottom">
+              <p><strong dir="ltr">15.000 ₺</strong><span data-i18n="campaignPrice">Kampanya fiyatı</span></p>
+              <a class="button button-dark" href="#basvuru" data-plan="6+6" data-i18n="chooseSix">6+6 ayı seç</a>
+            </div>
+          </article>
+        </div>
+        <p class="campaign-note" data-i18n="campaignNote">Fiyatlar şubenin duyurusundan alınmıştır. Güncel geçerlilik ve kontenjanı şubeden öğren.</p>
+      </div>
+    </section>
+
+    <section class="signup" id="basvuru" data-pages="home membership" aria-labelledby="signup-title">
+      <div class="wrap signup-inner">
+        <div class="signup-copy">
+          <p class="kicker" data-i18n="signupKicker">Üyelik başvurusu</p>
+          <h2 id="signup-title" data-i18n="signupTitle">İlk adımı at.</h2>
+          <p data-i18n="signupText">Şubeni seç ve iletişim bilgilerini bırak. İlgilendiğin üyeliği de ekleyebilirsin.</p>
+          <p id="preview-form-note" data-i18n="previewNote" hidden>Başvurunu WhatsApp mesajı olarak hazırlayıp kendin gönderebilirsin.</p>
+        </div>
+        <form id="registration-form" method="post" action="/api/leads">
+          <div class="form-fields">
+            <div class="field">
+              <label for="name" data-i18n="nameLabel">Ad soyad</label>
+              <input id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required aria-describedby="name-error" data-placeholder="namePlaceholder" placeholder="Adın ve soyadın">
+              <small class="field-error" id="name-error"></small>
+            </div>
+            <div class="field">
+              <label for="phone" data-i18n="phoneLabel">Telefon</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="35" required dir="ltr" aria-describedby="phone-error" data-placeholder="phonePlaceholder" placeholder="+90 5XX XXX XX XX">
+              <small class="field-error" id="phone-error"></small>
+            </div>
+            <div class="field field-wide">
+              <label for="email" data-i18n="emailLabel">E-posta (isteğe bağlı)</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" dir="ltr" aria-describedby="email-error" placeholder="ornek@eposta.com" data-placeholder="emailPlaceholder">
+              <small class="field-error" id="email-error"></small>
+            </div>
+            <div class="field">
+              <label for="branch" data-i18n="branchLabel">Şube</label>
+              <select id="branch" name="branch" required aria-describedby="branch-error">
+                <option value="" data-i18n="chooseBranch">Şube seç</option>
+                <option value="caglayan">Çağlayan</option>
+                <option value="circir">Çırçır</option>
+                <option value="ornektepe">Örnektepe</option>
+              </select>
+              <small class="field-error" id="branch-error"></small>
+            </div>
+            <div class="field">
+              <label for="plan" data-i18n="planLabel">Üyelik seçeneği</label>
+              <select id="plan" name="plan" aria-describedby="plan-error">
+                <option value="" data-i18n="generalPlan">Genel üyelik bilgisi</option>
+                <option value="3+3" data-i18n="threePlan" disabled>3+3 ay · Çırçır</option>
+                <option value="6+6" data-i18n="sixPlan" disabled>6+6 ay · Çırçır</option>
+              </select>
+              <small class="field-error" id="plan-error"></small>
+            </div>
+          </div>
+          <div class="form-consent">
+            <label><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"> <span data-i18n="consent">Workout Gym’in bu başvuru hakkında benimle iletişime geçmesini kabul ediyorum.</span></label>
+            <small class="field-error" id="consent-error"></small>
+          </div>
+          <button class="button button-lime" id="submit-lead" type="submit" data-i18n="submit">Başvuruyu gönder</button>
+          <p id="registration-status" role="status" aria-live="polite"></p>
+          <a id="lead-whatsapp" class="button button-dark" target="_blank" rel="noopener noreferrer" data-i18n="openWhatsApp" hidden>WhatsApp’ı aç</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq wrap" data-pages="membership" aria-labelledby="faq-title" hidden>
+      <h2 id="faq-title" data-i18n="faq">Sık sorulanlar</h2>
+      <details><summary data-i18n="faqOffers">Kampanyalar hangi şube için?</summary><p data-i18n="faqOffersAnswer">Bu sayfadaki 3+3 ve 6+6 teklifleri Çırçır şubesi için gösterilir. Güncel koşulları şubeden öğrenebilirsin.</p></details>
+      <details><summary data-i18n="faqApply">Başvuruda hangi bilgiler gerekiyor?</summary><p data-i18n="faqApplyAnswer">Adın, telefon numaran ve şube seçimin gerekir. E-posta ve üyelik paketi isteğe bağlıdır.</p></details>
+      <details><summary data-i18n="faqVisit">Şubeye nasıl giderim?</summary><p><a href="/salon#subeler" data-route data-i18n="faqVisitAnswer">Tüm adresleri ve yol tariflerini göster.</a></p></details>
+    </section>
+
+    <section class="tour wrap" id="salon" data-pages="home club" aria-labelledby="tour-title">
+      <div class="section-head tour-copy">
+        <div>
+          <p class="kicker" data-i18n="tourKicker">Salon turu</p>
+          <h2 id="tour-title" data-i18n="tourTitle">Çırçır’ı keşfet.</h2>
+        </div>
+        <p data-i18n="tourText">Sokaktaki altın heykelden serbest ağırlık alanına. Şubeyi 1 dakika 48 saniyede gez.</p>
+      </div>
+      <div class="video-frame">
+        <video id="club-video" controls playsinline preload="none" poster="/assets/circir-salon.webp" data-aria="tourKicker" aria-label="Salon turu">
+          <source src="/assets/salon-turu.mp4" type="video/mp4">
+        </video>
+        <button class="video-start" type="button" id="video-start">
+          <span class="play" aria-hidden="true">▶</span><span data-i18n="tourPlay">Salon turunu izle</span>
+        </button>
+      </div>
+      <p class="video-error" id="video-error" role="status" hidden data-i18n="videoError">Video yüklenemedi. Tekrar oynatmayı deneyebilirsin.</p>
+      <div class="facility-grid">
+        <article><h3 data-i18n="weights">Serbest ağırlıklar</h3><p data-i18n="weightsText">Dambıl, bar ve makinelerle kuvvet antrenmanına alan aç.</p></article>
+        <article><h3 data-i18n="program">Kişiye özel program</h3><p data-i18n="programText">Antrenman hedeflerini ekiple konuş ve bir başlangıç planı oluştur.</p></article>
+        <article><h3 data-i18n="visitReady">Ziyaretini planla</h3><p data-i18n="visitReadyText">Çırçır şubesinde duş, soyunma alanı ve ücretsiz otopark bulunuyor.</p></article>
+      </div>
+    </section>
+
+    <section class="founder wrap" data-pages="home" aria-labelledby="founder-title">
+      <div class="founder-inner">
+        <img src="/assets/kurucu-portre.webp" alt="Salih Workout" width="1000" height="1250" loading="lazy">
+        <div>
+          <p class="kicker" data-i18n="founderRole">Workout Gym’in kurucusu</p>
+          <h2 id="founder-title">Salih Workout</h2>
+          <p data-i18n="founderText">Workout Gym’i hayata geçiren isimle tanış.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="subeler" data-pages="home club" aria-labelledby="visit-title">
+      <div class="wrap visit-inner">
+        <div class="visit-copy">
+          <p class="kicker" data-i18n="heroPlace">İstanbul</p>
+          <h2 id="visit-title" data-i18n="findClub">Şubeni bul.</h2>
+          <ul class="locations">
+            <li id="caglayan">
+              <div><h3>Çağlayan</h3><address dir="ltr">Vatan Cd., Efes İş Hanı 86/20–21, 34403 Kağıthane / İstanbul</address></div>
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Workout+Gym+%C3%87a%C4%9Flayan+Vatan+Cd+Efes+%C4%B0%C5%9F+Han%C4%B1+86+Ka%C4%9F%C4%B1thane" target="_blank" rel="noopener noreferrer" data-aria="mapCaglayan" aria-label="Çağlayan yol tarifi">↗</a>
+            </li>
+            <li id="circir">
+              <div><h3>Çırçır</h3><address dir="ltr">Sezai Karakoç Cd. No:36–38, 34070 Eyüpsultan / İstanbul</address></div>
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Workout+Gym+%C3%87%C4%B1r%C3%A7%C4%B1r+Sezai+Karako%C3%A7+Cd+36+Ey%C3%BCpsultan" target="_blank" rel="noopener noreferrer" data-aria="mapCircir" aria-label="Çırçır yol tarifi">↗</a>
+            </li>
+            <li id="ornektepe">
+              <div><h3>Örnektepe</h3><address dir="ltr">Mehmet Akif Ersoy Mah., Morgül Sok. No:1/A, 34413 Kağıthane / İstanbul</address></div>
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Workout+Gym+%C3%96rnektepe+Mehmet+Akif+Ersoy+Mah+Morg%C3%BCl+Sokak+1A+Ka%C4%9F%C4%B1thane" target="_blank" rel="noopener noreferrer" data-aria="mapOrnektepe" aria-label="Örnektepe yol tarifi">↗</a>
+            </li>
+          </ul>
+        </div>
+        <img class="facade" src="/assets/workout-gym-dis-cephe.webp" alt="Workout Gym tabelası ve girişteki aynalı heykel" data-alt="facadeAlt" width="720" height="1080" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <div>
+      <a class="brand" href="/" data-route dir="ltr"><span>WORKOUT</span><strong>GYM</strong></a>
+      <p data-i18n="heroPlace">İstanbul</p>
+    </div>
+    <div class="footer-contacts">
+      <h2 data-i18n="contacts">İletişim</h2>
+      <a href="tel:+905378691890" dir="ltr">+90 537 869 18 90</a>
+      <a href="https://www.instagram.com/workoutgymalibeykoy/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
+    <a class="button button-lime whatsapp" href="https://wa.me/905378691890" target="_blank" rel="noopener noreferrer" data-i18n="whatsapp">WhatsApp’tan yaz ↗</a>
+  </footer>
+</body>
+</html>
